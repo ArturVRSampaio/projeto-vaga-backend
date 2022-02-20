@@ -1,3 +1,15 @@
+# HOW TO RUN!
+
+clone this project then
+
+cd projeto-vaga-backend
+source venv/bin/activate
+
+python app.py or flask run
+
+
+
+---
 # ACMEVita
 
 Projeto de modelagem de dados e criação de uma API utilizando Python e Flask.
