@@ -1,11 +1,12 @@
 # HOW TO RUN!
 
-clone this project then
+* clone this project
+* cd projeto-vaga-backend
+* source venv/bin/activate
+* flask db upgrade
+* python flask run
+## A rota ("/") contem a doc com todas as rotas
 
-cd projeto-vaga-backend
-source venv/bin/activate
-
-python app.py or flask run
 
 
 
