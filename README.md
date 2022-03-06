@@ -4,7 +4,7 @@
 * cd projeto-vaga-backend
 * source venv/bin/activate
 * flask db upgrade
-* python flask run
+* flask run
 ## A rota ("/") contem a doc com todas as rotas
 
 

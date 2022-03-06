@@ -9,13 +9,13 @@ api = Api(app, title="ACMEVita api", description="ACMEVita api ")
 from DatabaseDriver import db
 migrate = Migrate(app, db)
 
-from Models.Department import Department
-from Models.Dependent import Dependent
-from Models.Employee import Employee
+from models.Department import Department
+from models.Dependent import Dependent
+from models.Employee import Employee
 
-from Controllers.Department import *
-from Controllers.Dependent import *
-from Controllers.Employee import *
+from controllers.Department import *
+from controllers.Dependent import *
+from controllers.Employee import *
 
 if __name__ == '__main__':
     app.run(debug=True)
