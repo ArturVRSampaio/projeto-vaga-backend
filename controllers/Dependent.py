@@ -8,3 +8,12 @@ class allDependent(Resource):
         allDependent = Dependent.query.all()
         unwrap = list(map(unwrapFunc, allDependent))
         return unwrap
+
+@api.route('/dependent/<int:id>')
+class getDependent(Resource):
+    def get(self, id=id):
+        dependent = Dependent.query.get(id)
+        if dependent:
+            return repr(dependent)
+        else:
+            return "nao encontrado"
