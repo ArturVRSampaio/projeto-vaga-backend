@@ -18,3 +18,14 @@ class getEmployee(Resource):
             return repr(employee)
         else:
             return "nao encontrado"
+
+
+@api.route('/employee/by/dept/<int:id>')
+class getEmployeeByDept(Resource):
+    def get(self, id=id):
+        allEmployee = Employee.query.filter_by(department_id=id)
+        if allEmployee:
+            unwrap = list(map(unwrapFunc, allEmployee))
+            return repr(unwrap)
+        else:
+            return "nao encontrado"
